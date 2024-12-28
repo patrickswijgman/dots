@@ -1,1 +1,8 @@
-/home/patrick/.gitconfig
+[core]
+    editor = vim
+[pull]
+	rebase = true
+[push]
+	autoSetupRemote = true
+[user]
+	name = Patrick
