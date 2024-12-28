@@ -1,14 +1,13 @@
 # Usage
 
-Move original file and create symlink:
+Move original file and create symlink from a relative path:
 
 ```sh
-mkdir -p ~/dots/$TARGET_FOLDER
-mv $TARGET ~/dots/$TARGET
-ln -s ~/dots/$TARGET ~/.config/fish/config.fish
+cd ~
+fish ~/dots/link.fish <relative-path-to-file>
 ```
 
-Remove symlink:
+Remove a symlink:
 
 ```sh
 unlink <file>
