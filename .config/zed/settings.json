@@ -9,6 +9,9 @@
 {
   "theme": "Rosé Pine Moon",
   "vim_mode": true,
+  "double_click_in_multibuffer": "open",
+  "ui_font_size": 18,
+  "buffer_font_size": 18,
   "languages": {
     "Markdown": {
       "format_on_save": "on"
