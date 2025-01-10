@@ -10,11 +10,14 @@
   "theme": "Rosé Pine Moon",
   "vim_mode": true,
   "double_click_in_multibuffer": "open",
-  "ui_font_size": 18,
-  "buffer_font_size": 18,
+  "ui_font_size": 20,
+  "buffer_font_size": 20,
   "languages": {
     "Markdown": {
       "format_on_save": "on"
+    },
+    "Python": {
+      "language_servers": ["!pylsp", "..."] // Fix: use pyright instead of pylsp
     }
   },
   "lsp": {

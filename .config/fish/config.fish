@@ -18,5 +18,9 @@ abbr gra 'git rebase --abort'
 abbr grs 'git restore'
 abbr grss 'git restore --staged'
 
+abbr dcu 'docker compose up'
+abbr dcr 'docker compose run --rm'
+
 fish_add_path ~/.local/bin
+fish_add_path ~/.cargo/bin
 fish_add_path ~/go/bin
