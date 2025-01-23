@@ -1,1 +1,4 @@
 theme=Wombat
+window-padding-balance=true
+window-width=999
+window-height=999

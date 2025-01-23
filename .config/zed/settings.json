@@ -9,9 +9,9 @@
 {
   "theme": "Rosé Pine Moon",
   "vim_mode": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
   "double_click_in_multibuffer": "open",
-  "ui_font_size": 20,
-  "buffer_font_size": 20,
   "languages": {
     "Markdown": {
       "format_on_save": "on"
@@ -30,6 +30,19 @@
           }
         }
       }
+    },
+    "dart": {
+      "binary": {
+        "path": "/home/patrick/flutter/bin/dart",
+        "arguments": ["language-server", "--protocol=lsp"]
+      }
     }
+  },
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-3-5-sonnet"
+    },
+    "version": "2"
   }
 }
