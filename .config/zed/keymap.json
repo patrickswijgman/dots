@@ -3,6 +3,8 @@
 // For information on binding keys, see the Zed
 // documentation: https://zed.dev/docs/key-bindings
 //
+// Vim specific documentation: https://zed.dev/docs/vim#customizing-key-bindings
+//
 // To see the default key bindings run `zed: open default keymap`
 // from the command palette.
 [
@@ -16,6 +18,14 @@
     "context": "Editor",
     "bindings": {
       // "j k": ["workspace::SendKeystrokes", "escape"]
+    }
+  },
+  {
+    "context": "EmptyPane || SharedScreen",
+    "bindings": {
+      // Put key bindings here (in addition to the context above) if you want them to
+      // work when no editor exists.
+      // "space f": "file_finder::Toggle"
     }
   },
   {
@@ -37,11 +47,21 @@
     }
   },
   {
-    "context": "EmptyPane || SharedScreen",
+    "context": "vim_mode == visual",
     "bindings": {
-      // Put key bindings here (in addition to the context above) if you want them to
-      // work when no editor exists.
-      // "space f": "file_finder::Toggle"
+      "shift-s": [
+        "vim::PushOperator",
+        {
+          "AddSurrounds": {}
+        }
+      ]
+    }
+  },
+  {
+    "context": "vim_mode == normal || vim_mode == visual",
+    "bindings": {
+      "s": ["vim::PushOperator", { "Sneak": {} }],
+      "S": ["vim::PushOperator", { "SneakBackward": {} }]
     }
   },
   {

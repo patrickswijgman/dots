@@ -9,15 +9,20 @@
 {
   "theme": "Rosé Pine Moon",
   "vim_mode": true,
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
   "double_click_in_multibuffer": "open",
   "languages": {
-    "Markdown": {
-      "format_on_save": "on"
-    },
     "Python": {
       "language_servers": ["!pylsp", "..."] // Fix: use pyright instead of pylsp
+    },
+    "JavaScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "TypeScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
     }
   },
   "lsp": {

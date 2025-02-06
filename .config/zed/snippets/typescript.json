@@ -1,0 +1,13 @@
+// For snippet examples, see https://github.com/rafamadriz/friendly-snippets/blob/main/snippets/javascript/typescript.json
+{
+  "Log to the console": {
+    "prefix": "log",
+    "body": ["console.log($1);", "$0"],
+    "description": "Log to the console"
+  },
+  "Throw Exception": {
+    "prefix": "throw",
+    "body": ["throw new Error(\"$1\");", "$0"],
+    "description": "Throw Exception"
+  }
+}
